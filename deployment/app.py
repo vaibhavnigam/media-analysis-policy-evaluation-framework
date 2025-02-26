@@ -26,7 +26,7 @@ class RootStack(Stack):
     extraction_service_only = True
 
     def __init__(self, scope):
-        super().__init__(scope, id="VideoAnalysisRootStack", env=env, description="Video analysis stack.",
+        super().__init__(scope, id="VideoAnalysisRootStack", env=env, description="Video analysis stack (SO9592).",
         )
         self.instance_hash = ""#str(uuid.uuid4())[0:5]
         self.opensearch_config = None
